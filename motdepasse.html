@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> tirage au sort </title>
+  <link rel="stylesheet" href="motdepasse.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bloc">
+    <div class="bloc1">
+      <div class="logo">
+        <img src="img/logo_google.png" alt=""></img>
+      </div>
+      <div class="title">
+        <h2>Connexion</h2>
+        <p>Mot de passe</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="email">
+        <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+        <div class="box1">
+          <input type="checkbox" id="checkbox">
+          <p>Afficher le mot de passe</p>
+        </div>
+      </div>
+      
+      <div class="next">
+        <a href="/redirection.html">Mot de passe oublié</a>
+        <a href="/redirection.html">
+          <button>Suivant</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <div class="lang">
+    <p>Français</p>
+    <img src="img/triangle.svg" alt="triangle"></img>
+  </div>
+  <div class="footers">
+    <p>Aide</p>
+    <p>Confidentialité</p>
+    <p>Conditions</p>
+  </div>
+</footer>
+
+<script>
+  const checkbox = document.getElementById('checkbox');
+  const passwordInput = document.getElementById('password');
+
+  checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+      passwordInput.type = 'text';
+    } else {
+      passwordInput.type = 'password';
+    }
+  });
+</script>
+
+</html>
