@@ -6,8 +6,8 @@ body {
     color: aliceblue;
     text-align: center;
     margin: 0;
-    padding-right: 25rem;
-    padding-left: 25rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-top: 2rem;
 
 }
@@ -54,14 +54,13 @@ button {
     transition: background-color 0.3s ease-in;
 }
 
-button a {
+a{
     text-decoration: none;
     color: #153E60;
     margin: 0;
     font-size: 16px;
     font-weight: bold;
 }
-
 button:hover {
     background-color: #d4d5d7;
     transition: background-color 0.3s ease-out;
@@ -84,8 +83,6 @@ button img {
         color: aliceblue;
         text-align: center;
         margin: 0;
-        padding-right: 1rem;
-        padding-left: 1rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
 
@@ -99,8 +96,10 @@ button img {
     p {
         font-size: 14px;
     }
-
+    a{
+        width: 280px;
+    }
     button {
-        width: 97%;
+        width: 100%;
     }
 }
